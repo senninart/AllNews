@@ -13,7 +13,8 @@
     <color name="cyan">#3282B8</color>
     <color name="diamond">#BBE1FA</color>
     <color name="transparent">#00FFFFFF</color>
-    <color name="disabled">#dcdbdc</color>
+    <color name="disabled">#BDBDBD</color>
+    <color name="gray">#FF8C8C8C</color>
 
     <color name="background">#EFEFEE</color>
     <color name="top_background">#FFFFFFFF</color>

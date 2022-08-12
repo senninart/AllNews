@@ -4,6 +4,7 @@
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
     <string name="all_news">AllNews</string>
+    <string name="top_news">Top News</string>
     <string name="recent_news">Recent News</string>
     <string name="title_category">Category</string>
     <string name="general">General</string>
@@ -13,6 +14,7 @@
     <string name="sports">Sports</string>
     <string name="science">Science</string>
     <string name="technology">Technology</string>
+    <string name="readmore">Read More:</string>
 
     <string-array name="option_language">
         <item><b>Region</b></item>

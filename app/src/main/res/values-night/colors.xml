@@ -14,6 +14,7 @@
     <color name="diamond">#BBE1FA</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="disabled">#dcdbdc</color>
+    <color name="gray">#FF8C8C8C</color>
 
     <color name="background">#0d1316</color>
     <color name="top_background">#1B262C</color>

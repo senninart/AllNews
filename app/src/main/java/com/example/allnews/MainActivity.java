@@ -2,10 +2,13 @@ package com.example.allnews;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -14,6 +17,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
     Spinner dropLanguage;
     String region, country = "us";
     Switch aSwitch;
+    ImageView moon;
 
 
     @Override
@@ -45,11 +50,13 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         dialog.setTitle("Loading...");
         dialog.show();
 
+        moon = findViewById(R.id.moon);
         aSwitch = findViewById(R.id.dark);
 
         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                moon.setColorFilter(getResources().getColor(R.color.navy));
                 if (isChecked) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                 } else {
@@ -123,38 +130,39 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         Button button = (Button) v;
         String category = button.getText().toString();
 
+
         if (!btn1.isEnabled()) {
             btn1.setEnabled(true);
-            btn1.setTextColor(Color.parseColor("#1B262C"));
+            btn1.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn2.isEnabled()) {
             btn2.setEnabled(true);
-            btn2.setTextColor(Color.parseColor("#1B262C"));
+            btn2.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn3.isEnabled()) {
             btn3.setEnabled(true);
-            btn3.setTextColor(Color.parseColor("#1B262C"));
+            btn3.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn4.isEnabled()) {
             btn4.setEnabled(true);
-            btn4.setTextColor(Color.parseColor("#1B262C"));
+            btn4.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn5.isEnabled()) {
             btn5.setEnabled(true);
-            btn5.setTextColor(Color.parseColor("#1B262C"));
+            btn5.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn6.isEnabled()) {
             btn6.setEnabled(true);
-            btn6.setTextColor(Color.parseColor("#1B262C"));
+            btn6.setTextColor(getResources().getColor(R.color.new_black));
         }
         else if (!btn7.isEnabled()) {
             btn7.setEnabled(true);
-            btn7.setTextColor(Color.parseColor("#1B262C"));
+            btn7.setTextColor(getResources().getColor(R.color.new_black));
         }
 
         if (button.isEnabled()){
             button.setEnabled(false);
-            button.setTextColor(Color.parseColor("#0F4C75"));
+            button.setTextColor(getResources().getColor(R.color.navy));
         }
 
         dialog.setTitle("Search Articles "+ category +"...");
@@ -184,7 +192,6 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         } else if (languageItem.equals("Taiwan")) {
             country = "tw";
         }
-
 
         if (!languageItem.equals("Region")){
 

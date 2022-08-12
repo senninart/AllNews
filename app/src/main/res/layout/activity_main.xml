@@ -33,19 +33,17 @@
                 android:id="@+id/dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true" />
-
-            <Spinner
-                android:id="@+id/language"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/outline_navy"
-                android:entries="@array/option_language"
-                android:spinnerMode="dialog"
-                android:textAlignment="center"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:layout_centerInParent="true"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <ImageView
+                android:id="@+id/moon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/dark"
+                android:src="@drawable/ic_baseline_nights_stay_24" />
 
         </RelativeLayout>
 
@@ -157,10 +155,43 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@id/top">
+
+        <TextView
+            android:id="@+id/top_news"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="@string/top_news"
+            android:gravity="center"
+            android:textColor="@color/new_black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/outline_navy"
+            android:entries="@array/option_language"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/top" />
+        android:layout_below="@id/title" />
 
 </RelativeLayout>
