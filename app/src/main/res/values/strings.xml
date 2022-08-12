@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AllNews</string>
+    <string name="api_key">1a298eeeea1a4d95a787c61db162c244</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="top_news">Top News</string>
+    <string name="recent_news">Recent News</string>
+    <string name="title_category">Category</string>
+    <string name="general">General</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="health">Health</string>
+    <string name="sports">Sports</string>
+    <string name="science">Science</string>
+    <string name="technology">Technology</string>
+
+    <string-array name="option_language">
+        <item>United States</item>
+        <item>United Kingdom</item>
+        <item>Indonesia</item>
+        <item>Brazil</item>
+        <item>Japan</item>
+        <item>South Korea</item>
+        <item>Russia</item>
+        <item>Taiwan</item>
+    </string-array>
+</resources>
