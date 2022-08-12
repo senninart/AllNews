@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/drawable/button_selector.xml" value="0.1405" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/drawable/button_selectpr.xml" value="0.1405" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/drawable/outline_black.xml" value="0.1405" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/drawable/outline_navy.xml" value="0.1405" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/layout/activity_details_news.xml" value="0.209375" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/iqbal/AndroidStudioProjects/AllNews/app/src/main/res/layout/news_list_item.xml" value="0.209375" />
       </map>
     </option>
   </component>

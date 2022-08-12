@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">AllNews</string>
-    <string name="api_key">1a298eeeea1a4d95a787c61db162c244</string>
+    <string name="api_key">27cb2552241642ff944d2f916e466e34</string>
     <string name="title_home">Home</string>
     <string name="title_news">News</string>
-    <string name="top_news">Top News</string>
+    <string name="all_news">AllNews</string>
     <string name="recent_news">Recent News</string>
     <string name="title_category">Category</string>
     <string name="general">General</string>
@@ -15,6 +15,7 @@
     <string name="technology">Technology</string>
 
     <string-array name="option_language">
+        <item><b>Region</b></item>
         <item>United States</item>
         <item>United Kingdom</item>
         <item>Indonesia</item>
