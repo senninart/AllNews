@@ -35,6 +35,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/new_black"
+                    android:text="@string/judul"
                     android:textSize="26sp"
                     android:textStyle="bold" />
 
@@ -44,6 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:gravity="end"
+                    android:text="@string/waktu"
                     android:textColor="@color/gray"
                     android:textSize="16sp"
                     android:maxLength="10"/>
@@ -61,6 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:text="@string/penulis"
                     android:textColor="@color/navy"
                     android:textStyle="bold"
                     android:textSize="16sp" />
@@ -70,6 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:text="@string/deskripsi"
                     android:textColor="@color/new_black"
                     android:textSize="20sp"/>
 
@@ -89,7 +93,7 @@
                     android:layout_marginBottom="20dp"
                     android:textColor="@color/cyan"
                     android:textSize="16sp"
-                    android:text="https://www.google.com"/>
+                    android:text="@string/url"/>
             </LinearLayout>
 
         </LinearLayout>
