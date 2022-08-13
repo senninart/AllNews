@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity implements SelectListener, V
         if (!languageItem.equals("Region")){
 
             dialog = new ProgressDialog(this);
-            dialog.setTitle("Search "+country+" Articles...");
+            dialog.setTitle("Search "+languageItem+" Articles...");
             dialog.show();
 
             RequestManager manager = new RequestManager(this);
